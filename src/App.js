@@ -39,6 +39,8 @@ class App extends Component {
         result: true,
         modal:false,
         
+    },()=>{
+      document.getElementById("search-imput").value = ""; 
     })
 
   }

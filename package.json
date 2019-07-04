@@ -1,9 +1,11 @@
 {
   "name": "mercadolibre-front",
   "author": "Ana Paula Monsalve Tapia",
+  "homepage": "https://anapaulamontap.github.io/Desafio-MercadoLibre",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -12,6 +14,8 @@
     "sass": "^1.22.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
