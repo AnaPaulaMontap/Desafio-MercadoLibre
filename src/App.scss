@@ -4,3 +4,33 @@
   height: 100%;
 }
 
+.Navbar{
+  background-color: #FFE600;
+  width: 100%;
+  height: 9vmin;
+  vertical-align: middle;
+}
+
+.Logo{
+  display: inline-block;
+  width: 10vmin;
+  margin-left: 15%;
+  margin-right: 2%;
+  margin-top: 0.5%;
+}
+
+.Searcher{
+  display: inline-block;
+  background-color: #FFF;
+  color: #999999;
+  border: none;
+  border-radius: 5px;  
+  vertical-align: super;  
+}
+
+.Inside{
+  display: inline-block;   
+  width: 50vmax;
+  font-size: 18px;
+  padding: 1%;
+}

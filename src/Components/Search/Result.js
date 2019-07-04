@@ -1,21 +1,24 @@
 import React, {Component} from 'react';
-import './Navbar.scss';
+import './Result.scss';
+import send from '../../Assets/mVArgVk3.png'
 
 
 class Result extends Component {
-    constructor(){
-    super ()
+    constructor(props){
+    super (props)
     this.state={
         results : [],
         categories: [],
-        categoriesSort: [],
+        categoriesSort: false,
     }
+    console.log(props)
   }
 
   componentDidMount = () =>{
-    fetch('https://api.mercadolibre.com/sites/MLC/search?q=mac')
+    fetch(`https://api.mercadolibre.com/sites/MLC/search?q=${this.props.data}`)
     .then(response=> response.json())
     .then( (data)=>{
+      
         let resultsData = data.results;
         let arrData =[];
 
@@ -62,12 +65,15 @@ class Result extends Component {
   }
 
   render (){
-    const cardsResults =  this.state.results.map(item =>{          
+    const cardsResults =  this.state.results.map(item =>{  
+      let shipping = item.shipping.free_shipping ? send : null;
+      console.log(shipping)        
         return (
             <div key={item.id} className="card" onClick={()=>this.props.open(item.id)}>
              <img src={item.thumbnail} alt={item.id} className="imageCard"/>
                 <div className="infoCard">
-                    <p className="Price"> $ {item.price.toLocaleString()}</p>
+                    <p className="Price"> $ {item.price.toLocaleString()}</p> 
+                    {item.shipping.free_shipping ? <span className="shipping"> <img src={send} alt="shipping" className="shipping"/></span> : null}                    
                     <p >{item.title}</p>
                 </div>
                 <div  className="cityCard">
@@ -78,14 +84,14 @@ class Result extends Component {
         )
           });
     
-      const breadcrumb__path = this.state.categoriesSort.map((item)=>{
+      const breadcrumb__path = this.state.categoriesSort ? ( this.state.categoriesSort.map((item)=>{
         return(
-          <div className="breadcrumb">
+          <div className="breadcrumb" key={item.id}>
            <span> &nbsp;>&nbsp;</span> <span key={item.id}>{item.name}</span> 
           </div>
 
           )
-      });
+      })):null;
 
   return (
       <div className="Results">
