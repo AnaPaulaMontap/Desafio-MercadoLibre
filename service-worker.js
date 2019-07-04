@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Desafio-MercadoLibre/precache-manifest.61236be7bd15ccebd2fe2a50a825cbbf.js"
+  "/Desafio-MercadoLibre/precache-manifest.311758ac13c4e3ca01004aa1e609bef6.js"
 );
 
 self.addEventListener('message', (event) => {

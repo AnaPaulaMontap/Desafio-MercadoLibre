@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Desafio-MercadoLibre/static/css/main.58377ca7.chunk.css",
-    "main.js": "/Desafio-MercadoLibre/static/js/main.5f77bb66.chunk.js",
-    "main.js.map": "/Desafio-MercadoLibre/static/js/main.5f77bb66.chunk.js.map",
+    "main.js": "/Desafio-MercadoLibre/static/js/main.f8b6bffe.chunk.js",
+    "main.js.map": "/Desafio-MercadoLibre/static/js/main.f8b6bffe.chunk.js.map",
     "runtime~main.js": "/Desafio-MercadoLibre/static/js/runtime~main.cff440a0.js",
     "runtime~main.js.map": "/Desafio-MercadoLibre/static/js/runtime~main.cff440a0.js.map",
     "static/js/2.71c2ab7b.chunk.js": "/Desafio-MercadoLibre/static/js/2.71c2ab7b.chunk.js",
     "static/js/2.71c2ab7b.chunk.js.map": "/Desafio-MercadoLibre/static/js/2.71c2ab7b.chunk.js.map",
     "index.html": "/Desafio-MercadoLibre/index.html",
-    "precache-manifest.61236be7bd15ccebd2fe2a50a825cbbf.js": "/Desafio-MercadoLibre/precache-manifest.61236be7bd15ccebd2fe2a50a825cbbf.js",
+    "precache-manifest.311758ac13c4e3ca01004aa1e609bef6.js": "/Desafio-MercadoLibre/precache-manifest.311758ac13c4e3ca01004aa1e609bef6.js",
     "service-worker.js": "/Desafio-MercadoLibre/service-worker.js",
     "static/css/main.58377ca7.chunk.css.map": "/Desafio-MercadoLibre/static/css/main.58377ca7.chunk.css.map"
   }
